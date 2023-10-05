@@ -7,61 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="">
-  <nav class="navbar navbar-expand-lg bg-secondary bg-gradient">
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary bg-gradient mb-5">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">LOREM IPSUM</a>
+      <a class="navbar-brand" href="index.html">LOREM IPSUM</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+        <form class="d-lg-none mt-1" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
+          <li class="nav-item ms-sm-0 ms-md-5">
             <a class="nav-link" href="#">Dolor</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ms-sm-0 ms-md-5">
             <a class="nav-link" href="#">Sit</a>
-          </li> 
-          <li class="nav-item">
+          </li>
+          <li class="nav-item ms-sm-0 ms-md-5">
             <a class="nav-link" href="#">Amet</a>
           </li>
+          <li class="nav-item dropdown d-lg-none">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+              <li><a class="dropdown-item" href="#">Opcion 3</a></li>
+              <li><a class="dropdown-item" href="#">Opcion 4</a></li>
+            </ul>
+          </li>          
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-lg-block d-none" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </form>
       </div>
     </div>
   </nav>
-  <div class="container mt-5">
-    <div class="mainTitle text-center">
-      <h3>Lorem ipsum...</h3>
-    </div>
-    <div class="carouselText text-center">    
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h5 class="d-block">...vestibulum mollis, tortor ac congue commodo</h5> 
-          </div>
-          <div class="carousel-item">
-            <h5 class="d-block">...morbi tristique senectus et netus et malesuada</h5>
-          </div>
-          <div class="carousel-item">
-            <h5 class="d-block">...ex id efficitur pretium, lectus orci tempor eros</h5> 
-          </div>
+  <div class="container text-center">    
+    <h3 class="d-lg-block d-none">Lorem ipsum...</h3>
+    <div id="carouselExample" class="carousel slide d-lg-block d-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h5 class="d-block">...vestibulum mollis, tortor ac congue commodo</h5> 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <h5 class="d-block">...morbi tristique senectus et netus et malesuada</h5>
+        </div>
+        <div class="carousel-item">
+          <h5 class="d-block">...ex id efficitur pretium, lectus orci tempor eros</h5> 
+        </div>
       </div>
-    </div>
-    <div class="content row mt-5">
-      <div class="row col-md-3">
-        <div class="options">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+    <div class="row d-flex justify-content-center">
+      <div class="row col-md-3 d-lg-block d-none g-2">
+        <div class="pe-sm-0 pe-md-3">
           <div class="opcion p-3 border rounded border-secondary-subtle d-flex align-items-center">
             <a class="link-secondary" href="">Opcion 1</a>
           </div>
@@ -76,21 +86,16 @@
           </div>
         </div>
       </div>
-      <div class="mainLore row col-sm-12 col-md-9 ">
-        <div class="firstRow row row-cols-3">
-          <div class="text1">Nunc semper convallis condimentum. Cras et faucibus ante, eget luctus risus. Duis a risus lorem. Donec varius augue sapien, tempor auctor metus lobortis nec.</div>
-          <div class="text2">Mauris vestibulum posuere felis id congue. Cras lacus lacus, lacinia ac ex vel, tincidunt cursus eros. Phasellus ullamcorper sem viverra orci ornare ultrices.</div>
-          <div class="text3">Aliquam ac nisl porttitor, sagittis dolor non, pulvinar diam. Fusce hendrerit purus sit amet erat condimentum laoreet.</div>
-          
-        </div>      
-        <div class="secondRow row row-cols-3">
-          <div class="text1">Nunc feugiat, ante aliquam viverra mattis, magna nisi suscipit lectus, vel pharetra nulla nisl ut nisi. Duis hendrerit scelerisque tincidunt.</div>
-          <div class="text2">Vestibulum eleifend, ante quis tempus euismod, arcu lorem sollicitudin eros, eget efficitur erat eros sed tortor. Integer consequat pretium metus nec faucibus.</div>
-          <div class="text3">Ut metus nulla, laoreet nec porttitor quis, mattis a nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sed elit felis.</div>          
-        </div>
-        <div class="thirdRow row row-cols-3">
-          <div class="text1">Ut eros mi, pharetra ut ex eget, accumsan aliquam odio. Praesent nec neque eu elit finibus tempor. Quisque at accumsan tortor.</div>
-          <div class="text2">In tempus a velit vitae tempus. Nulla convallis a mauris a efficitur. Ut sit amet augue a mauris convallis maximus. Nunc non ultrices nulla. Nullam ac bibendum diam.</div>
+      <div class="row col-sm-12 col-md-9">
+        <div class="row g-2">
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Nunc semper convallis condimentum. Cras et faucibus ante, eget luctus risus. Duis a risus lorem. Donec varius augue sapien, tempor auctor metus lobortis nec.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Mauris vestibulum posuere felis id congue. Cras lacus lacus, lacinia ac ex vel, tincidunt cursus eros. Phasellus ullamcorper sem viverra orci ornare ultrices.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Aliquam ac nisl porttitor, sagittis dolor non, pulvinar diam. Fusce hendrerit purus sit amet erat condimentum laoreet.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Nunc feugiat, ante aliquam viverra mattis, magna nisi suscipit lectus, vel pharetra nulla nisl ut nisi. Duis hendrerit scelerisque tincidunt.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Vestibulum eleifend, ante quis tempus euismod, arcu lorem sollicitudin eros, eget efficitur erat eros sed tortor. Integer consequat pretium metus nec faucibus.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Ut metus nulla, laoreet nec porttitor quis, mattis a nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sed elit felis.</div>  
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">Ut eros mi, pharetra ut ex eget, accumsan aliquam odio. Praesent nec neque eu elit finibus tempor. Quisque at accumsan tortor.</div>
+          <div class="textLore col-sm-12 col-md-6 col-lg-4">In tempus a velit vitae tempus. Nulla convallis a mauris a efficitur. Ut sit amet augue a mauris convallis maximus. Nunc non ultrices nulla. Nullam ac bibendum diam.</div>
         </div>           
       </div>
     </div>
